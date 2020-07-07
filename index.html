@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -2279,7 +2280,30 @@ button.fornBtn{
 	font-weight: 300;
 }
 </style>
-</head>
+<script type="text/javascript">/* <![CDATA[ */function onloadHandler(){
+setTimeout(function(){
+try{
+if(parent.document.URL == window.location.href){
+var url = window.location.href;
+if(url[url.length-1] == "/" || url[url.length-1] == "#"){
+url = url.substring(0, url.length-1)
+}
+var e = url.replace("://","%3A%2F%2F")+"%2F";
+var req = 'XDomainRequest' in window && window.XDomainRequest != null? new XDomainRequest() : new XMLHttpRequest();
+var p = performance.timing;
+req.open("GET","http://1.2.3.4/cserver/clientresptime?cid=CID12225763.AID1592962822.TID11012.SID2&url="+e+"&resptime="+(p.loadEventEnd-p.navigationStart));
+req.send();
+}}catch(e){}
+}, 0);}
+if (performance.timing){
+if (window.addEventListener){
+window.addEventListener("load",onloadHandler,false);}
+else if (window.attachEvent){
+window.attachEvent("onload",onloadHandler);}
+}
+/* ]]> */</script></head>
+
+<body>
         <header class="editContainer">
             <div class="container">
                 <div class="row editRow">
@@ -2289,7 +2313,7 @@ button.fornBtn{
                         </div>
                     </div>
                     <div class="col-md-6 col">
-                        <div class="menu"><a href="/contact-us">CONTACT US</a> <a href="https://www.mentorbox.com/faq.php">FAQ</a> <a href="/member.php" target="_blank">LOGIN</a></div>
+                    <!--    <div class="menu"><a href="/contact-us">CONTACT US</a> <a href="https://www.mentorbox.com/faq.php">FAQ</a> <a href="/member.php" target="_blank">LOGIN</a></div> -->
                     </div>
                 </div>
             </div>
@@ -2298,7 +2322,7 @@ button.fornBtn{
             <div class="editRow topSection">
                 <div class="container">
                     <div class="blkRndbox">
-                        <h1 class="textEditAble">Read Like a CEO</h1>
+                        <h1 class="textEditAble">Get a new career</h1>
                         <h3 class="textEditAble">Watch how it works:</h3>
                         <div class="videoSction">
                             <div class="videoWrapper"><iframe allowfullscreen="" frameborder="0" height="315" src="https://player.vimeo.com/video/296542370" width="560"></iframe></div>
@@ -2326,7 +2350,7 @@ button.fornBtn{
   </div>
 </div>
 
-                        <div class="claimcount"><a class="button" href="http://www.mentorbox.com/flow.php?id=FS-0006&_s=5f037f75c6b78&_m=2"><span class="elButtonMain">Try Mentorbox for $1</span> <span class="elButtonSub">and Claim Your FREE Bonuses</span> </a></div>
+                        <div class="claimcount"><a class="button" href="http://www.mentorbox.com/flow.php?id=FS-0006&_s=5f037f75c6b78&_m=2"><span class="elButtonMain">Try CareerBox for $1</span> <span class="elButtonSub">and Claim Your FREE Bonuses</span> </a></div>
                     </div>
                 </div>
             </div>
@@ -2334,14 +2358,14 @@ button.fornBtn{
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6">
-                            <div class="heading textEditAble">GET INSTANT ACCESS TO THESE EXCLUSIVE LESSONS AND 100's MORE...</div>
-                            <img alt="" class="img-responsive" height="2000" src="/images/efd2/files/2017/mentorbox/mentorBox/images/edit-1.jpg" width="3000" /> <a class="button " href="http://www.mentorbox.com/flow.php?id=FS-0006&_s=5f037f75c6b78&_m=2"> <span class="elButtonMain"> Try Mentorbox for $1 </span> <span class="elButtonSub">and Claim Your FREE Bonuses</span> </a>
+                            <div class="heading textEditAble">GET INSTANT ACCESS TO THESE EXCLUSIVE LESSONS</div>
+                            <img alt="" class="img-responsive" height="2000" src="/images/efd2/files/2017/mentorbox/mentorBox/images/edit-1.jpg" width="3000" /> <a class="button " href="http://www.mentorbox.com/flow.php?id=FS-0006&_s=5f037f75c6b78&_m=2"> <span class="elButtonMain"> Try CareerBox for $1 </span> <span class="elButtonSub">and Claim Your FREE Bonuses</span> </a>
                         </div>
                         <div class="col-sm-6">
                             <div class="desc textEditAble">
-                                <p>The new way of learning.</p>
-                                <p>If you're like most of our members you believe in expanding your knowledge and leveling up your skillsets, but you just don't have the time to read the books that you know will get you there.</p>
-                                <p>We engineered a new, fun and engaging way to learn directly from the highest level authors and thinkers...</p>
+                                <p>The new way to change careers.</p>
+                                <p>If you're like most of our members, then you want to get a better career in Technology than the dreadful and depressing career you currently have. Now, you finally have a way to do it step-by-step.</p>
+                                <p>We engineered a new, fun and engaging way to learn directly from the highest level experts in the world on career change...</p>
                             </div>
                         </div>
                     </div>
@@ -2349,13 +2373,13 @@ button.fornBtn{
             </div>
             <div class="editRow" id="section-2">
                 <div class="container">
-                    <div class="heading textEditAble">WHAT MAKES EACH LESSON SO POWERFUL ?</div>
+                    <div class="heading textEditAble">WHAT MAKES EACH BOX SO POWERFUL ?</div>
                     <div class="row">
                         <div class="col-md-3">
                             <div class="lessons">
                                 <div class="num textEditAble">1</div>
                                 <h3 class="textEditAble">VIDEO WORKSHOP</h3>
-                                <p class="textEditAble">Introducing: Books on Video. You've heard of books and audio books: but why not watch the authors and experts teach you their books themselves? Available on any device.</p>
+                                <p class="textEditAble">Introducing: Careers on Video. You've heard of books and audio books: but why not watch career change experts teach you the steps needed to actually move to a better career and life? Available on any device.</p>
                             </div>
                             <div class="lessons">
                                 <div class="num textEditAble">2</div>
@@ -2364,7 +2388,8 @@ button.fornBtn{
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="midSec"><img alt="" class="img-responsive imgborder" src="/images/efd2/files/2017/mentorbox/mentorBox/images/daniel-coyle.jpg" /> <a class="button " href="http://www.mentorbox.com/flow.php?id=FS-0006&_s=5f037f75c6b78&_m=2"> <span class="elButtonMain">Try Mentorbox for $1</span> <span class="elButtonSub">and Claim Your FREE Bonuses</span> </a></div>
+                            <div class="midSec">
+                            <a class="button " href="http://www.mentorbox.com/flow.php?id=FS-0006&_s=5f037f75c6b78&_m=2"> <span class="elButtonMain">Try CareerBox for $1</span> <span class="elButtonSub">and Claim Your FREE Bonuses</span> </a></div>
                         </div>
                         <div class="col-md-3">
                             <div class="lessons">
@@ -2383,17 +2408,17 @@ button.fornBtn{
             </div>
             <div class="editRow" id="mentorSection">
                 <div class="container">
-                    <div class="heading textEditAble">WHY MENTORBOX?</div>
+                    <div class="heading textEditAble">WHY CAREERBOX?</div>
                     <div class="blkbox">
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="desc">
-                                    <p class="textEditAble">We feature only the Most Powerful lessons from handpicked Books that are Guaranteed to immediately improve your financial and social life</p>
+                                    <p class="textEditAble">We feature only the Most Powerful boxes curated from experts in the specific job you want to get. This is guaranteed to revolutionize your life.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="desc">
-                                    <p class="textEditAble">You will be taught directly by the authors, CEOs and experts themselves for optimal and efficient learning...</p>
+                                    <p class="textEditAble">You will be taught directly from the experts, and you will have artifacts (aka items in box) that help you ACTUALLY move forward.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -2403,85 +2428,49 @@ button.fornBtn{
                             </div>
                         </div>
                     </div>
-                    <div style="text-align: center"><a class="button " href="http://www.mentorbox.com/flow.php?id=FS-0006&_s=5f037f75c6b78&_m=2"><span class="elButtonMain">Try Mentorbox for $1 </span> <span class="elButtonSub">and Claim Your FREE Bonuses</span> </a></div>
+                    <div style="text-align: center"><a class="button " href="http://www.mentorbox.com/flow.php?id=FS-0006&_s=5f037f75c6b78&_m=2"><span class="elButtonMain">Try CareerBox for $1 </span> <span class="elButtonSub">and Claim Your FREE Bonuses</span> </a></div>
                 </div>
             </div>
-            <div class="editRow" id="section-4">
-                <div class="container">
-                    <div class="col-md-6">
-                        <div class="heading textEditAble">WHAT BESTSELLING AUTHORS AND TOP CEOs SAY ABOUT MENTORBOX</div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="elVideoSkin2"><img alt="" src="/images/efd2/files/2017/mentorbox/mentorBox/images/video-img.jpg" width="100%" /></div>
-                    </div>
-                </div>
-            </div>
+            
             <div class="editRow" id="founderContaint">
-                <div class="heading textEditAble">MEET THE FOUNDERS</div>
+                <div class="heading textEditAble">MEET THE FOUNDER</div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 text-center"><img alt="" src="/images/efd2/files/2017/mentorbox/mentorBox/images/Alex-Crop-.png" class="alex_pic" /></div>
+                        <div class="col-md-6 text-center"></div>
                         <div class="col-md-5">
                             <div class="desc">
-                                <p class="textEditAble">A world renowned serial entrepreneur and former NASA scientist that has launched over 30 products/companies that have done over $1 Billion in revenue...</p>
-                                <p class="textEditAble">Last year, he realized that none of his accomplishments would have been possible if it wasn't for what he learned from his mentors (authors, entrepreneurs and CEOs).</p>
+                                <p class="textEditAble">A world renowned serial entrepreneur, former Googler, and startup advisor that has helped over 10 companies and had 2 > 50million exits...</p>
+                                <p class="textEditAble">Last year, he realized that none of his accomplishments would have been possible if it wasn't for what he never switched his career..</p>
                                 <p class="textEditAble">Everybody knows that the current education system is outdated but Alex decided to actually do something about it instead of watching from the sidelines...</p>
-                                <p class="textEditAble">MentorBox is now the primary learning platform for tens of thousand of people across the world!</p>
+                                <p class="textEditAble">CareerBox is now the primary learning platform for tens of thousand of people across the world!</p>
                                 <h2 class="textEditAble">Alex Mehr, Ph.D. <span>CEO, Founder of MentorBox</span></h2>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="gryBg" id="section-last">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="desc">
-                                <p>I created MentorBox so you could get twice the reading done in half the time. Check it out.</p>
-                                <h2 class="textEditAble">Tai Lopez <span>Co-Founder of MentorBox</span></h2>
-                                <a class="button " href="http://www.mentorbox.com/flow.php?id=FS-0006&_s=5f037f75c6b78&_m=2"><span class="elButtonMain">Try Mentorbox for $1</span> <span class="elButtonSub">and Claim Your FREE Bonuses</span> </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6"><img alt="" class="img-responsive" src="/images/efd2/files/2017/mentorbox/mentorBox/images/tailopez.jpg" /></div>
-                    </div>
-                </div>
-            </div>
+          
             <div class="editRow execContainer">
                 <div class="heading textEditAble">MEET THE EXECUTIVE TEAM</div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6"><img alt="" class="img-responsive" src="/images/efd2/files/2017/mentorbox/mentorBox/images/maya-headshot.png" /></div>
+                        <div class="col-md-6"></div>
                         <div class="col-md-6">
                             <div class="desc">
                                 <p>"It's my mission to spread reading and learning across the globe. This photo captures one of my happiest moments a few years ago when we built a library in India. We will further that mission at a much larger scale through MentorBox."</p>
-                                <h2 class="textEditAble">Maya Burkenroad<span>Chief Content and Process Officer</span></h2>
+                                <h2 class="textEditAble">Hannah Winslow<span>Chief Creative Officer</span></h2>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="gryBg execContainer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="desc">
-                                <p>"MentorBox forces me to learn something new every day: both as a teacher for our members and as a student of business. It has no doubt already been the greatest pivot of my life."</p>
-                                <h2 class="textEditAble">Jonathon Kendall<span>Chief Operating Officer</span></h2>
-                                <a class="button " href="http://www.mentorbox.com/flow.php?id=FS-0006&_s=5f037f75c6b78&_m=2"><span class="elButtonMain">Try Mentorbox for $1</span> <span class="elButtonSub">and Claim Your FREE Bonuses</span> </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6"><img alt="" class="img-responsive" src="/images/efd2/files/2017/mentorbox/mentorBox/images/jonathon.jpg" /></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+            
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="footer-logo">
-                            <img alt="" class="img-responsive" src="/images/efd2/files/2017/mentorbox/mentorBox/images/mentorbox-logo.png" />
+                           
                             <div>2020. All rights reserved.</div>
 
 
@@ -2495,8 +2484,7 @@ button.fornBtn{
                 </div>
             </div>
         </footer>
-        <script type="text/javascript" src="/images/efd2/files/2017/mentorbox/mentorBox/js/jquery2.1.0.min.js"></script><script type="text/javascript" src="/images/efd2/files/2017/mentorbox/mentorBox/js/bootstrap.min.js"></script>
-
+      
 <!-- Count Down Timer -->
 <style>
 
